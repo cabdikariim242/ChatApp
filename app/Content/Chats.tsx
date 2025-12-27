@@ -3,7 +3,7 @@ import { router } from "expo-router";
 import React from "react";
 import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
+import talking from '../../'
 const Contact = () => {
   return (
     <SafeAreaView>
@@ -48,7 +48,7 @@ export default Contact;
 const Cards = ({ isTrue }: any) => {
   return (
     <Pressable
-      onPress={() => router.push("/Content/talking")}
+      onPress={() => router.push("/components/talking")}
       className="flex flex-row justify-between items-center gap-4"
     >
       <Image source={images.profile} style={{ width: 38, height: 38 }} />
